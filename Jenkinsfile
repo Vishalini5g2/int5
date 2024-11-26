@@ -1,4 +1,3 @@
-
 pipeline {
     agent any 
 
@@ -21,11 +20,11 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               script {
+                script {
                     // Deploy your Docker image
                     echo 'Deploying application...'
                 }
             }
-        }
-    }
+        }
+    }
 }
